@@ -299,6 +299,7 @@ footer input[type="text"], footer input[type="email"], textarea {
     border: none;
     margin-bottom: 24px;
     font-size: 16px;
+    outline: none;
 }
 
 .footer-title {
@@ -320,6 +321,90 @@ footer input[type="text"], footer input[type="email"], textarea {
 .textar {
     height: 100px;
 }
+
+
+
+
+
+
+/*  Responsive media query */
+ 
+@media screen and (max-width: 576px) {
+    nav,
+    nav > ul,
+    .banner,
+    .skills-container,
+    .resume-container,
+    footer, 
+    .about-items  {
+        flex-direction: column;
+    }
+
+    .banner {
+        margin: 20px;
+        /* text-align: center; */
+    }
+
+    .header {
+        background-image: none;
+    }
+
+    nav {
+        margin: 0;
+    }
+
+    nav > ul {
+        gap: 20px;
+        padding-top: 30px;
+    }
+
+    .skills > .section-description,
+    .resume-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    footer, .about {
+        padding: 20px;
+    }
+
+    .footer-column,
+    .banner > img {
+        width: 100%;
+    }
+
+    .btn-primary {
+        margin-bottom: 20px;
+    }
+
+    .btn-secondary {
+        margin: 0;
+    }
+
+    footer input[type="text"],
+    footer input[type="email"],
+    textarea {
+        width: calc(100% - 40px);
+    }
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
